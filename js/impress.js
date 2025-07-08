@@ -3823,7 +3823,7 @@
                         case 38: // Up
                                  api.prev( event );
                                  break;
-                        case 9:  // Tab
+                        // case 9:  // Tab
                         case 32: // Space
                         case 34: // Pg down
                         case 39: // Right
