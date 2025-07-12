@@ -43,7 +43,16 @@ function onCentralizedBitcoinBeholderEnter(event) {
 }
 
 function onLittleGrumpiesEnter(event) {
-    connectGrumpies();
+    connectSpecificGrumpies('little-grumpy1', 'little-grumpy5');
+    connectSpecificGrumpies('little-grumpy1', 'little-grumpy6');
+    connectSpecificGrumpies('little-grumpy6', 'little-grumpy3');
+    connectSpecificGrumpies('little-grumpy6', 'little-grumpy4');
+    connectSpecificGrumpies('little-grumpy3', 'little-grumpy4');
+    connectSpecificGrumpies('little-grumpy3', 'little-grumpy2');
+    connectSpecificGrumpies('little-grumpy5', 'little-grumpy2');
+    connectSpecificGrumpies('little-grumpy5', 'little-grumpy7');
+    connectSpecificGrumpies('little-grumpy5', 'little-grumpy4');
+    connectSpecificGrumpies('little-grumpy7', 'little-grumpy4');
 }
 
 function connectElements(parent, element1, element2) {
@@ -68,7 +77,7 @@ function connectElements(parent, element1, element2) {
     line.style.position = 'absolute';
     line.style.width = `${distance}px`;
     line.style.height = '2px'; // Thin line
-    line.style.backgroundColor = 'red'; // Line color
+    line.style.backgroundColor = '#007bff'; // Line color
     line.style.top = `${pos1.top}px`;
     line.style.left = `${pos1.left}px`;
     line.style.transformOrigin = '0 0'; // Rotate from the start of the line
@@ -79,62 +88,14 @@ function connectElements(parent, element1, element2) {
     parent.appendChild(line);
 }
 
-function connectGrumpies() {
-    // 1. Find all elements that match the query ".little-grumpy"
-    const iterGrumpies = document.querySelectorAll('.little-grumpy');
-    const randomGrumpies = Array.from(iterGrumpies); // Copy the NodeList to an array
+function connectSpecificGrumpies(leftGrumpyId, rightGrumpyId) {
+    const parent = document.getElementById('decentralized-bitcoin'); // Assuming both elements share the same parent
+    const leftGrumpy = document.getElementById(leftGrumpyId);
+    const rightGrumpy = document.getElementById(rightGrumpyId);
 
-    // Set to track connected pairs
-    const connectedPairs = new Set();
-
-    // 2. Iterate over each element in iterGrumpies
-    iterGrumpies.forEach(currentGrumpy => {
-        // 3. Pick two random elements from randomGrumpies that aren't the same as the currentGrumpy
-        const filteredGrumpies = randomGrumpies.filter(grumpy => grumpy !== currentGrumpy);
-        if (filteredGrumpies.length < 2) return; // Ensure there are at least two other elements
-
-        let randomElement1, randomElement2;
-
-        // Find the first random element that isn't already connected
-        do {
-            const randomIndex1 = Math.floor(Math.random() * filteredGrumpies.length);
-            randomElement1 = filteredGrumpies[randomIndex1];
-        } while (isAlreadyConnected(currentGrumpy, randomElement1, connectedPairs) && filteredGrumpies.length > 1);
-
-        // Find the second random element that isn't already connected
-        do {
-            const randomIndex2 = Math.floor(Math.random() * filteredGrumpies.length);
-            randomElement2 = filteredGrumpies[randomIndex2];
-        } while (
-            (randomElement2 === randomElement1 || isAlreadyConnected(currentGrumpy, randomElement2, connectedPairs)) &&
-            filteredGrumpies.length > 1
-        );
-
-        // 4. Draw lines connecting the currentGrumpy to the two random elements
-        const parent = currentGrumpy.parentElement; // Assuming all grumpies share the same parent
-
-        if (!isAlreadyConnected(currentGrumpy, randomElement1, connectedPairs)) {
-            connectElements(parent, currentGrumpy, randomElement1);
-            addConnection(currentGrumpy, randomElement1, connectedPairs);
-        }
-
-        if (!isAlreadyConnected(currentGrumpy, randomElement2, connectedPairs)) {
-            connectElements(parent, currentGrumpy, randomElement2);
-            addConnection(currentGrumpy, randomElement2, connectedPairs);
-        }
-    });
-
-    // Helper function to check if two elements are already connected
-    function isAlreadyConnected(el1, el2, connections) {
-        const pair1 = `${el1.id}-${el2.id}`;
-        const pair2 = `${el2.id}-${el1.id}`;
-        return connections.has(pair1) || connections.has(pair2);
-    }
-
-    // Helper function to add a connection between two elements
-    function addConnection(el1, el2, connections) {
-        const pair = `${el1.id}-${el2.id}`;
-        connections.add(pair);
+    if (parent && leftGrumpy && rightGrumpy) {
+        connectElements(parent, leftGrumpy, rightGrumpy);
+    } else {
+        console.error('One or more elements could not be found.');
     }
 }
-
