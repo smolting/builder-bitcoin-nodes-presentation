@@ -8,9 +8,9 @@
             if(event.detail.substep.id === 'no-miners') {
                 onNoMinersEnter(event);
             }
-            // if(event.detail.substep.id === 'centralized-bitcoin-beholder') {
-            //     onCentralizedBitcoinBeholderEnter(event);
-            // }
+            if(event.detail.substep.id === 'centralized-bitcoin-beholder') {
+                onCentralizedBitcoinBeholderEnter(event);
+            }
             if(event.detail.substep.id === 'little-grumpies') {
                 onLittleGrumpiesEnter(event);
             }
@@ -76,7 +76,7 @@ function connectElements(parent, element1, element2) {
     const line = document.createElement('div');
     line.style.position = 'absolute';
     line.style.width = `${distance}px`;
-    line.style.height = '2px'; // Thin line
+    line.style.height = '5px'; // Thin line
     line.style.backgroundColor = '#007bff'; // Line color
     line.style.top = `${pos1.top}px`;
     line.style.left = `${pos1.left}px`;

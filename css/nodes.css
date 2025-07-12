@@ -977,6 +977,173 @@ a:focus {
     left: 500px;
 }
 
+#decentralized-bitcoin .wallets, #decentralized-bitcoin .miners {
+    position: absolute;
+}
+
+#nodes-and-miners-3-wallet1 {
+    width: 75px;
+    height: 75px;
+    top: 317px;
+    left: 63px;
+    background-image: url('../images/bitcoin-wallet2.png');
+    background-size: 75px;
+    background-color: black;
+}
+
+#nodes-and-miners-3-wallet2 {
+    top: 57px;
+    left: 166px;
+    width: 75px;
+    height: 75px;
+    background-image: url('../images/bitcoin-wallet2.png');
+    background-size: 75px;
+    background-color: black;
+}
+
+#nodes-and-miners-3-wallet3 {
+    top: 550px;
+    left: 650px;
+    width: 75px;
+    height: 75px;
+    background-image: url('../images/bitcoin-wallet2.png');
+    background-size: 75px;
+    background-color: black;
+}
+
+#nodes-and-miners-3-wallet4 {
+    top: 75px;
+    left: 730px;
+    width: 75px;
+    height: 75px;
+    background-image: url('../images/bitcoin-wallet2.png');
+    background-color: black;
+    background-size: 75px;
+}
+
+#nodes-and-miners-3-miner1 {
+    top: 317px;
+    left: 750px;
+    width: 75px;
+    height: 75px;
+    background-image: url('../images/pickaxe-icon.png');
+    background-size: 75px;
+}
+
+#nodes-and-miners-3-miner2 {
+    top: 514px;
+    left: 119px;
+    width: 75px;
+    height: 75px;
+    background-image: url('../images/pickaxe-icon.png');
+    background-size: 75px;
+}
+
+#nodes-and-miners-3-miner3 {
+    top: 0px;
+    left: 440px;
+    width: 75px;
+    height: 75px;
+    background-image: url('../images/pickaxe-icon.png');
+    background-size: 75px;
+}
+
+#nodes-and-miners-3-miner4 {
+    top: 550px;
+    left: 356px;
+    width: 75px;
+    height: 75px;
+    background-image: url('../images/pickaxe-icon.png');
+    background-size: 75px;
+}
+
+#decentralized-bitcoin .node {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: black;
+}
+#decentralized-bitcoin #nodes .node#node1 {
+    top: 250px;
+    left: 300px;
+}
+#decentralized-bitcoin #nodes .node#node2 {
+    top: 305px;
+    left: 395px;
+}
+
+#decentralized-bitcoin #nodes .node#node3 {
+    top: 450px;
+    left: 500px;
+}
+#decentralized-bitcoin #nodes .node#node4 {
+    top: 300px;
+    left: 585px;
+}
+#decentralized-bitcoin #nodes .node#node5 {
+    top: 150px;
+    left: 350px;
+}
+#decentralized-bitcoin #nodes .node#node6 {
+    top: 380px;
+    left: 300px;
+}
+#decentralized-bitcoin #nodes .node#node7 {
+    top: 170px;
+    left: 500px;
+}
+
+#decentralized-bitcoin #node-connections .connection {
+    position: absolute;
+    border: 5px solid #007bff;
+    border-top:1px solid red;
+    border-left:1px solid red;
+    border-right:1px solid red;
+    height: 50px;
+    overflow: hidden;
+}
+#decentralized-bitcoin #node-connections #wallet1-to-node1 {
+	top: 266px;
+	left: 135px;
+	width: 159px;
+	transform: rotate(-19deg);
+	z-index: -999;
+}
+#decentralized-bitcoin #node-connections #miner1-to-node4 {
+	top: 353px;
+	left: 756px;
+	width: 118px;
+	transform: rotate(-172deg);
+	z-index: -999;
+}
+
+#decentralized-bitcoin #node-connections #wallet1-to-node1 .traveling-transaction {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/tx.png');
+    background-size: 50px;
+    left: -50px;
+    animation-name: wallet1-tx-animation-5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes wallet1-tx-animation-5 {
+  0%   {left:-50px; top:0px;}
+  100%  {left:200px;}
+}
+
+#decentralized-bitcoin .wallets, #decentralized-bitcoin .miners {
+    position: absolute;
+}
+/* #decentralized-bitcoin {
+    top: 250px;
+    left: 300px;
+} */
+
 #title {
     padding: 0;
 }
