@@ -84,28 +84,57 @@ function connectGrumpies() {
     const iterGrumpies = document.querySelectorAll('.little-grumpy');
     const randomGrumpies = Array.from(iterGrumpies); // Copy the NodeList to an array
 
+    // Set to track connected pairs
+    const connectedPairs = new Set();
+
     // 2. Iterate over each element in iterGrumpies
     iterGrumpies.forEach(currentGrumpy => {
         // 3. Pick two random elements from randomGrumpies that aren't the same as the currentGrumpy
         const filteredGrumpies = randomGrumpies.filter(grumpy => grumpy !== currentGrumpy);
         if (filteredGrumpies.length < 2) return; // Ensure there are at least two other elements
 
-        const randomIndex1 = Math.floor(Math.random() * filteredGrumpies.length);
-        const randomElement1 = filteredGrumpies.splice(randomIndex1, 1)[0]; // Remove and get the first random element
+        let randomElement1, randomElement2;
 
-        const randomIndex2 = Math.floor(Math.random() * filteredGrumpies.length);
-        const randomElement2 = filteredGrumpies[randomIndex2]; // Get the second random element
+        // Find the first random element that isn't already connected
+        do {
+            const randomIndex1 = Math.floor(Math.random() * filteredGrumpies.length);
+            randomElement1 = filteredGrumpies[randomIndex1];
+        } while (isAlreadyConnected(currentGrumpy, randomElement1, connectedPairs) && filteredGrumpies.length > 1);
+
+        // Find the second random element that isn't already connected
+        do {
+            const randomIndex2 = Math.floor(Math.random() * filteredGrumpies.length);
+            randomElement2 = filteredGrumpies[randomIndex2];
+        } while (
+            (randomElement2 === randomElement1 || isAlreadyConnected(currentGrumpy, randomElement2, connectedPairs)) &&
+            filteredGrumpies.length > 1
+        );
 
         // 4. Draw lines connecting the currentGrumpy to the two random elements
         const parent = currentGrumpy.parentElement; // Assuming all grumpies share the same parent
-        connectElements(parent, currentGrumpy, randomElement1);
-        connectElements(parent, currentGrumpy, randomElement2);
-    });
-}
 
-// Example usage:
-// const parent = document.getElementById('decentralized-bitcoin');
-// const element1 = document.getElementById('little-grumpy1');
-// const element2 = document.getElementById('little-grumpy3');
-// connectElements(parent, element1, element2);
+        if (!isAlreadyConnected(currentGrumpy, randomElement1, connectedPairs)) {
+            connectElements(parent, currentGrumpy, randomElement1);
+            addConnection(currentGrumpy, randomElement1, connectedPairs);
+        }
+
+        if (!isAlreadyConnected(currentGrumpy, randomElement2, connectedPairs)) {
+            connectElements(parent, currentGrumpy, randomElement2);
+            addConnection(currentGrumpy, randomElement2, connectedPairs);
+        }
+    });
+
+    // Helper function to check if two elements are already connected
+    function isAlreadyConnected(el1, el2, connections) {
+        const pair1 = `${el1.id}-${el2.id}`;
+        const pair2 = `${el2.id}-${el1.id}`;
+        return connections.has(pair1) || connections.has(pair2);
+    }
+
+    // Helper function to add a connection between two elements
+    function addConnection(el1, el2, connections) {
+        const pair = `${el1.id}-${el2.id}`;
+        connections.add(pair);
+    }
+}
 
