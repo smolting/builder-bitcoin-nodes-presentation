@@ -367,8 +367,33 @@
             </p>
         </div>
 
-        <div id="decentralized-bitcoin" class="step slide" , data-x="6144" data-y="0">
-            <div class="notes"></div>
+        <div id="decentralized-bitcoin" class="step slide" data-x="6144" data-y="0">
+            <div class="notes">
+                <p>
+                    So clearly the goal here is to be decentralized. Let's see what happens when we
+                    break up this centralized power into little grumpy bitcoins.
+                </p>
+                <p>
+                    You can see that they are all connected to each other, either directly or indirectly.
+                    That means they can share information they see. Information like transactions and blocks.
+                </p>
+                <p>
+                    So now let's re-introduce our wallets and miners, and instead of connecting to a central
+                    authority, they choose a little grumpy bitcoin to connect to.
+                </p>
+                <p>
+                    And the big reveal here is that the little grumpy bitcoins are actually nodes.
+                </p>
+                <p>
+                    Let's look at how sending a transaction works in this decentralized network.
+                </p>
+                <p>
+                    Now in practice, we don't have 7 nodes; there are 20k known nodes on the network
+                    But it works really fast. If you've ever received a bitcoin transaction, you usually\
+                    see it within a second or two of the person hitting the send button. This network
+                    is really good at gossiping and quickly getting information from one end to the next
+                </p>
+            </div>
             <div id="little-grumpies" class="substep">
                 <div class="little-grumpy" id="little-grumpy1"></div>
                 <div class="little-grumpy" id="little-grumpy2"></div>
@@ -464,8 +489,49 @@
             </div>
         </div>
 
+        <div id="node-properties" class="step slide" data-x="5450" data-y="-600" data-scale="3" style="opacity: 0">
+            <div class="notes">
+                <h1 id="title">What does a node do?</h1>
+                <ul>
+                    <li>Verifies everything it's told (trustless)</li>
+                    <li>Stores all (or at least the last X blocks) of blockchain data</li>
+                    <li>Keeps track of all the pending transactions across the network (for fee estimation)</li>
+                    <li>Helps new nodes "catch up" with the history and the current state of the network</li>
+                    <li>Helps wallets "catch up" with the history of their transactions</li>
+                    <li>Helps miners know which transactions they should be putting into the next block</li>
+                </ul>
+            </div>
+            <h1>What a node does:</h1>
+
+            <ul>
+                <li class="substep">Relays</li>
+                <li class="substep">Verifies</li>
+                <li class="substep">Stores</li>
+                <li class="substep">Tracks pending transactions</li>
+                <li class="substep narrow-list-item">...to service nodes, wallets, and miners</li>
+            </ul>
+        </div>
+        <div id="what-does-a-node-look-like" class="step" data-x="6144" data-y="0" data-scale="0.2">
+            <div id="zoomed-in-node" style="opacity: 0"></div>
+        </div>
     </div>
 
+
+    <!-- <div class="step">
+        <h1>Why you should run a node<h1>
+
+        <ul>
+            <li>I hope that I've adequately demonstrated that your wallet relies on a node</li>
+            <li>And if it's not your node, it's someone else's node.</li>
+            <li>That means, if you're not running a node, you'll giving all your wallet information to a stranger's node, 
+                and trusting that they aren't doing anything with it</li>
+            <li>Running your own node means that you can be significantly more private in your bitcoin usage</li>
+        </ul>
+    </div>
+    <div>
+        <ul>So now you're panicked. You're like I have to run a node immediately!</ul>
+        <ul>Well, let's do that</ul>
+    </div> -->
     <!--
     This is a UI plugin. You can read more about plugins in src/plugins/README.md.
     For now, I'll just tell you that this adds some graphical controls to navigate the

@@ -1418,6 +1418,56 @@ a:focus {
     top: 170px;
     left: 500px;
 }
+
+.impress-on-node-properties #node-properties {
+    opacity: 1;
+}
+.impress-on-node-properties #decentralized-bitcoin {
+    opacity: 1.0;
+    z-index: 99999;
+}
+
+#node-properties ul{
+    list-style: inherit;
+    margin-top: 50px;
+}
+#node-properties li  {
+    font-size: 48px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#node-properties li::marker  {
+    color: #007bff;
+    font-size: 48px;
+}
+#node-properties li.narrow-list-item {
+    width: 400px;
+}
+
+#node-properties h1 {
+    font-size: 64px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.impress-on-what-does-a-node-look-like #decentralized-bitcoin {
+    opacity: 0.3;
+}
+.impress-on-what-does-a-node-look-like #zoomed-in-node {
+    opacity: 1.0 !important;
+}
+
+#what-does-a-node-look-like #zoomed-in-node {
+	position: absolute;
+	top: -186px;
+	left: 173px;
+	width: 231px;
+	height: 231px;
+	border: 23px solid #007bff;
+	border-radius: 50%;
+	z-index: 9999999;
+	background-color: yellow;
+}
 #title {
     padding: 0;
 }
