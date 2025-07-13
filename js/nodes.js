@@ -22,6 +22,11 @@
                 const txAnimation = document.querySelector('#decentralized-bitcoin #transaction-propagates-to-miners-2-3-4' );
                 txAnimation.style.display = 'none';
             }
+            if(event.detail.substep.id === 'miners-mining-the-tx2'){
+
+                const txAnimation = document.querySelector('#decentralized-bitcoin #transaction-propagates-to-miner1-and-wallet4');
+                txAnimation.style.display = 'none';
+            }
         },
     )
 })(document, window);

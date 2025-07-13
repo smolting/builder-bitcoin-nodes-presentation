@@ -1095,6 +1095,21 @@ a:focus {
     left: 500px;
 }
 
+#decentralized-bitcoin #wallet1-circle {
+	position: absolute;
+	top: 290px;
+	left: 51px;
+    color: white;
+	/* background-color: rgba(0, 0, 0, 0.5); */
+}
+#decentralized-bitcoin #wallet4-circle {
+	position: absolute;
+	top: 50px;
+	left: 708px;
+    color: white;
+	/* background-color: rgba(0, 0, 0, 0.5); */
+}
+
 #decentralized-bitcoin #node-connections .connection {
     position: absolute;
     border: 5px solid #007bff;
@@ -1286,6 +1301,35 @@ a:focus {
 @keyframes wallet1-tx-animation-8 {
   0%   {left:-50px; top:0px; opacity: 1}
   100%  {left:100px; opacity: 0}
+}
+
+#decentralized-bitcoin .miner-mining{
+    background-image: url('../images/tx.png');
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+#decentralized-bitcoin #miner2-mining-the-tx {
+    top: 587px;
+    left: 190px;
+}
+#decentralized-bitcoin #miner3-mining-the-tx {
+    top: 70px;
+    left: 511px;
+}
+#decentralized-bitcoin #miner4-mining-the-tx {
+    top: 625px;
+    left: 431px;
+}
+#decentralized-bitcoin #wallet4-received-the-tx {
+    top: 392px;
+    left: 825px;
+}
+#decentralized-bitcoin #miner1-mining-the-tx {
+    top: 145px;
+    left: 796px;
 }
 
 #decentralized-bitcoin #wallet4-gets-transaction{
