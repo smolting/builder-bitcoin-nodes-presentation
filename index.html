@@ -394,11 +394,19 @@
             </div>
             <div id="node-connections" class="substep">
                 <div id="wallet1-to-node1" class="outside-connection">
-                    <div class="traveling-transaction"></div>
+                    <!-- <div class="traveling-transaction"></div> -->
                 </div>
                 <div id="miner1-to-node4" class="outside-connection"></div>
                 <div id="miner2-to-node6" class="outside-connection"></div>
                 <div id="miner4-to-node6" class="outside-connection"></div>
+                <div id="miner4-to-node6" class="outside-connection"></div>
+                <div id="miner3-to-node5" class="outside-connection"></div>
+                <div id="wallet2-to-node5" class="outside-connection"></div>
+                <div id="wallet3-to-node3" class="outside-connection"></div>
+                <div id="wallet4-to-node7" class="outside-connection"></div>
+            </div>
+            <div id="transaction-origination" class="substep traveling-transaction-path">
+                    <div class="traveling-transaction"></div> 
             </div>
             <div id="first-tx-propagation" class="substep">
                 <div id="node1-gets-tx" class="node-with-tx"></div>
@@ -407,14 +415,32 @@
                 <div id="node5-gets-tx" class="node-with-tx"></div>
                 <div id="node6-gets-tx" class="node-with-tx"></div>
             </div>
+
+            <div id="transaction-propagates-to-miners-2-3-4" class="substep">
+                <div id="miner3-gets-transaction" class="traveling-transaction-path">
+                    <div id="miner3-traveling-transaction"></div>
+                </div>
+                <div id="miner2-gets-transaction" class="traveling-transaction-path">
+                    <div id="miner2-traveling-transaction"></div>
+                </div>
+                <div id="miner4-gets-transaction" class="traveling-transaction-path">
+                    <div id="miner4-traveling-transaction"></div>
+                </div>
+            </div>
+
             <div id="third-tx-propagation" class="substep">
                 <div id="node2-gets-tx" class="node-with-tx"></div>
                 <div id="node3-gets-tx" class="node-with-tx"></div>
                 <div id="node4-gets-tx" class="node-with-tx"></div>
                 <div id="node7-gets-tx" class="node-with-tx"></div>
             </div>
-            <div>
-
+            <div id="transaction-propagates-to-miner1-and-wallet4" class="substep">
+                <div id="wallet4-gets-transaction" class="traveling-transaction-path">
+                    <div id="wallet4-traveling-transaction"></div>
+                </div>
+                <div id="miner1-gets-transaction" class="traveling-transaction-path">
+                    <div id="miner1-traveling-transaction"></div>
+                </div>
             </div>
         </div>
 

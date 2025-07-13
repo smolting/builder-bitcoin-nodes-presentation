@@ -14,6 +14,14 @@
             if(event.detail.substep.id === 'little-grumpies') {
                 onLittleGrumpiesEnter(event);
             }
+            if(event.detail.substep.id === 'first-tx-propagation') {
+                const txAnimation = document.querySelector('#decentralized-bitcoin .traveling-transaction');
+                txAnimation.style.display = 'none';
+            }
+            if(event.detail.substep.id === 'third-tx-propagation') {
+                const txAnimation = document.querySelector('#decentralized-bitcoin #transaction-propagates-to-miners-2-3-4' );
+                txAnimation.style.display = 'none';
+            }
         },
     )
 })(document, window);

@@ -1141,7 +1141,62 @@ a:focus {
 	transform: rotate(-114deg);
 	z-index: -999;
 }
-#decentralized-bitcoin #node-connections #wallet1-to-node1 .traveling-transaction {
+#decentralized-bitcoin #node-connections #miner3-to-node5 {
+	top: 81px;
+	left: 338px;
+	width: 114px;
+	transform: rotate(-59deg);
+	z-index: -999;
+}
+#decentralized-bitcoin #node-connections #wallet2-to-node5 {
+	top: 93px;
+	left: 229px;
+	width: 150px;
+	transform: rotate(21deg);
+	z-index: -999;
+}
+#decentralized-bitcoin #node-connections #wallet3-to-node3 {
+	top: 491px;
+	left: 539px;
+	width: 150px;
+	transform: rotate(38deg);
+	z-index: -999;
+}
+#decentralized-bitcoin #node-connections #wallet4-to-node7 {
+	top: 111px;
+	left: 548px;
+	width: 181px;
+	transform: rotate(-15deg);
+	z-index: -999;
+}
+
+#decentralized-bitcoin .wallets, #decentralized-bitcoin .miners {
+    position: absolute;
+}
+/* #decentralized-bitcoin {
+    top: 250px;
+    left: 300px;
+} */
+
+#decentralized-bitcoin .traveling-transaction-path {
+	z-index: -999;
+    position: absolute;
+    border: 0px solid red;
+    border-top:0px solid red;
+    border-left:0px solid red;
+    border-right:0px solid red;
+    height: 50px;
+    overflow: hidden;
+}
+
+#decentralized-bitcoin #transaction-origination{
+	top: 266px;
+	left: 135px;
+	width: 159px;
+	transform: rotate(-19deg);
+}
+
+#decentralized-bitcoin #transaction-origination .traveling-transaction {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -1158,13 +1213,128 @@ a:focus {
   100%  {left:150px; opacity: 0}
 }
 
-#decentralized-bitcoin .wallets, #decentralized-bitcoin .miners {
-    position: absolute;
+#decentralized-bitcoin #miner3-gets-transaction {
+	top: 81px;
+	left: 338px;
+	width: 114px;
+	transform: rotate(-59deg);
+	z-index: -999;
 }
-/* #decentralized-bitcoin {
-    top: 250px;
-    left: 300px;
-} */
+
+#decentralized-bitcoin #miner3-traveling-transaction {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/tx.png');
+    background-size: 50px;
+    left: -50px;
+    animation-name: wallet1-tx-animation-6;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes wallet1-tx-animation-6 {
+  0%   {left:-50px; top:0px; opacity: 1}
+  100%  {left:100px; opacity: 0}
+}
+
+
+#decentralized-bitcoin #miner2-gets-transaction{
+	top: 422px;
+	left: 158px;
+	width: 163px;
+	transform: rotate(-40deg);
+	z-index: -999;
+}
+#decentralized-bitcoin #miner2-traveling-transaction {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/tx.png');
+    background-size: 50px;
+    left: -50px;
+    animation-name: wallet1-tx-animation-7;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes wallet1-tx-animation-7 {
+  0%   {left:100px; top:0px; opacity: 1}
+  100%  {left:-50px; opacity: 0}
+}
+
+
+#decentralized-bitcoin #miner4-gets-transaction {
+	top: 457px;
+	left: 313px;
+	width: 145px;
+	transform: rotate(67deg);
+	z-index: -999;
+}
+#decentralized-bitcoin #miner4-traveling-transaction {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/tx.png');
+    background-size: 50px;
+    left: -50px;
+    animation-name: wallet1-tx-animation-8;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes wallet1-tx-animation-8 {
+  0%   {left:-50px; top:0px; opacity: 1}
+  100%  {left:100px; opacity: 0}
+}
+
+#decentralized-bitcoin #wallet4-gets-transaction{
+	top: 111px;
+	left: 548px;
+	width: 181px;
+	transform: rotate(-15deg);
+	z-index: -999;
+}
+#decentralized-bitcoin #wallet4-traveling-transaction {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/tx.png');
+    background-size: 50px;
+    left: -50px;
+    animation-name: wallet1-tx-animation-9;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes wallet1-tx-animation-9 {
+  0%   {left:-50px; top:0px; opacity: 1}
+  100%  {left:175px; opacity: 0}
+}
+#decentralized-bitcoin #miner1-gets-transaction {
+	top: 291px;
+	left: 637px;
+	width: 118px;
+	transform: rotate(8deg);
+	z-index: -999;
+}
+#decentralized-bitcoin #miner1-traveling-transaction {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/tx.png');
+    background-size: 50px;
+    left: -50px;
+    animation-name: wallet1-tx-animation-10;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes wallet1-tx-animation-10 {
+  0%   {left:-50px; top:0px; opacity: 1}
+  100%  {left:100px; opacity: 0}
+}
+
 
 #decentralized-bitcoin .node-with-tx {
     position: absolute;
