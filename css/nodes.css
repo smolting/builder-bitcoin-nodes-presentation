@@ -511,43 +511,45 @@ a:focus {
 
 /* to wallet 2 */
 #wallet1-sends-to-wallet2 {
-	position: absolute;
-	top: 205px;
-	left: 123px;
-	width: 609px;
-	height: 55px;
-	rotate: -21deg;
-	z-index: -20;
-	color: red;
-	border: 0px red solid;
+    position: absolute;
+    top: 205px;
+    left: 123px;
+    width: 609px;
+    height: 55px;
+    rotate: -21deg;
+    z-index: -20;
+    color: red;
+    border: 0px red solid;
     overflow: hidden;
 }
+
 #wallet1-sends-to-wallet2-connection {
-	position: absolute;
-	top: 50px;
-	left: 0px;
-	width: 609px;
-	height: 3px;
-	color: #007bff;
-	border: 1px #007bff solid;
-	background-color: #007bff;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 609px;
+    height: 3px;
+    color: #007bff;
+    border: 1px #007bff solid;
+    background-color: #007bff;
 }
+
 #wallet1-sends-to-wallet2-tx {
-  width: 50px;
-  height: 50px;
-  /* background-color: orange; */
-  background-image: url('../images/tx.png');
-  background-size: 50px;
-  position: relative;
-  animation-name: wallet1-tx-animation;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  left: -50px;
-  animation-timing-function: linear;
+    width: 50px;
+    height: 50px;
+    /* background-color: orange; */
+    background-image: url('../images/tx.png');
+    background-size: 50px;
+    position: relative;
+    animation-name: wallet1-tx-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    left: -50px;
+    animation-timing-function: linear;
 }
 
 /* to miner 1 */
-#wallet1-sends-to-miner1-container{
+#wallet1-sends-to-miner1-container {
     position: absolute;
     top: 319px;
     left: 150px;
@@ -559,154 +561,193 @@ a:focus {
     color: red;
     border: 0px red solid;
 }
+
 #wallet1-sends-to-miner1-connection {
-	position: absolute;
-	top: 50px;
-	left: 0px;
-	width: 590px;
-	height: 3px;
-	rotate: 0deg;
-	z-index: 40;
-	color: #007bff;
-	border: 1px #007bff solid;
-	background-color: #007bff;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 590px;
+    height: 3px;
+    rotate: 0deg;
+    z-index: 40;
+    color: #007bff;
+    border: 1px #007bff solid;
+    background-color: #007bff;
 }
+
 #wallet1-sends-to-miner1-tx {
-  width: 50px;
-  height: 50px;
-  /* background-color: orange; */
-  background-image: url('../images/tx.png');
-  background-size: 50px;
-  position: relative;
-  animation-name: wallet1-tx-animation;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  left: -50px;
-  animation-timing-function: linear;
+    width: 50px;
+    height: 50px;
+    /* background-color: orange; */
+    background-image: url('../images/tx.png');
+    background-size: 50px;
+    position: relative;
+    animation-name: wallet1-tx-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    left: -50px;
+    animation-timing-function: linear;
 }
+
 @keyframes wallet1-tx-animation {
-  0%   {left:-50px; top:0px;}
-  100%  {left:650px;}
+    0% {
+        left: -50px;
+        top: 0px;
+    }
+
+    100% {
+        left: 650px;
+    }
 }
+
 #wallet1-sends-to-miner2-container {
-	position: absolute;
-	top: 416px;
-	left: 102px;
-	width: 152px;
-	height: 55px;
-	rotate: 90deg;
-	z-index: 20;
-	color: red;
-	border: 0px red solid;
-	overflow: hidden;
-}
-#wallet1-sends-to-miner2-connection {
-	position: absolute;
-	top: 49px;
-	left: 0px;
-	width: 590px;
-	height: 3px;
-	rotate: 0deg;
-	z-index: 40;
-	color: #007bff;
-	border: 1px #007bff solid;
-	background-color: #007bff;
-}
-#wallet1-sends-to-miner2-tx {
-  width: 50px;
-  height: 50px;
-  /* background-color: orange; */
-  background-image: url('../images/tx.png');
-  background-size: 50px;
-  position: relative;
-  animation-name: wallet1-tx-animation-2;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  left: -50px;
-  animation-timing-function: linear;
-}
-@keyframes wallet1-tx-animation-2 {
-  0%   {left:-50px; top:0px;}
-  100%  {left:170px;}
-}
-#wallet1-sends-to-miner3-container {
-	position: absolute;
-	top: 418px;
-	left: 128px;
-	width: 263px;
-	height: 55px;
-	rotate: 46deg;
-	z-index: -20;
-	color: red;
-	border: 0px red solid;
-	overflow: hidden;
-}
-#wallet1-sends-to-miner3-connection {
-	position: absolute;
-	top: 50px;
-	left: 0px;
-	width: 263px;
-	height: 3px;
-	z-index: -20;
-	color: #007bff;
-	border: 1px #007bff solid;
-	background-color: #007bff;
-}
-#wallet1-sends-to-miner3-tx {
-  width: 50px;
-  height: 50px;
-  /* background-color: orange; */
-  background-image: url('../images/tx.png');
-  background-size: 50px;
-  position: relative;
-  animation-name: wallet1-tx-animation-3;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  left: -50px;
-  animation-timing-function: linear;
-}
-@keyframes wallet1-tx-animation-3 {
-  0%   {left:-50px; top:0px;}
-  100%  {left:270px;}
-}
-#wallet1-sends-to-miner4-container {
-	position: absolute;
-	top: 165px;
-	left: 58px;
-	width: 431px;
-	height: 55px;
-	rotate: -49deg;
-	z-index: -20;
-	color: red;
-	border: 0px red solid;
+    position: absolute;
+    top: 416px;
+    left: 102px;
+    width: 152px;
+    height: 55px;
+    rotate: 90deg;
+    z-index: 20;
+    color: red;
+    border: 0px red solid;
     overflow: hidden;
 }
+
+#wallet1-sends-to-miner2-connection {
+    position: absolute;
+    top: 49px;
+    left: 0px;
+    width: 590px;
+    height: 3px;
+    rotate: 0deg;
+    z-index: 40;
+    color: #007bff;
+    border: 1px #007bff solid;
+    background-color: #007bff;
+}
+
+#wallet1-sends-to-miner2-tx {
+    width: 50px;
+    height: 50px;
+    /* background-color: orange; */
+    background-image: url('../images/tx.png');
+    background-size: 50px;
+    position: relative;
+    animation-name: wallet1-tx-animation-2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    left: -50px;
+    animation-timing-function: linear;
+}
+
+@keyframes wallet1-tx-animation-2 {
+    0% {
+        left: -50px;
+        top: 0px;
+    }
+
+    100% {
+        left: 170px;
+    }
+}
+
+#wallet1-sends-to-miner3-container {
+    position: absolute;
+    top: 418px;
+    left: 128px;
+    width: 263px;
+    height: 55px;
+    rotate: 46deg;
+    z-index: -20;
+    color: red;
+    border: 0px red solid;
+    overflow: hidden;
+}
+
+#wallet1-sends-to-miner3-connection {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 263px;
+    height: 3px;
+    z-index: -20;
+    color: #007bff;
+    border: 1px #007bff solid;
+    background-color: #007bff;
+}
+
+#wallet1-sends-to-miner3-tx {
+    width: 50px;
+    height: 50px;
+    /* background-color: orange; */
+    background-image: url('../images/tx.png');
+    background-size: 50px;
+    position: relative;
+    animation-name: wallet1-tx-animation-3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    left: -50px;
+    animation-timing-function: linear;
+}
+
+@keyframes wallet1-tx-animation-3 {
+    0% {
+        left: -50px;
+        top: 0px;
+    }
+
+    100% {
+        left: 270px;
+    }
+}
+
+#wallet1-sends-to-miner4-container {
+    position: absolute;
+    top: 165px;
+    left: 58px;
+    width: 431px;
+    height: 55px;
+    rotate: -49deg;
+    z-index: -20;
+    color: red;
+    border: 0px red solid;
+    overflow: hidden;
+}
+
 #wallet1-sends-to-miner4-connection {
-	position: absolute;
-	top: 50px;
-	left: 0px;
-	width: 431px;
-	height: 3px;
-	color: #007bff;
-	border: 1px #007bff solid;
-	background-color: #007bff;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 431px;
+    height: 3px;
+    color: #007bff;
+    border: 1px #007bff solid;
+    background-color: #007bff;
 }
+
 #wallet1-sends-to-miner4-tx {
-  width: 50px;
-  height: 50px;
-  /* background-color: orange; */
-  background-image: url('../images/tx.png');
-  background-size: 50px;
-  position: relative;
-  animation-name: wallet1-tx-animation-4;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  left: -50px;
-  animation-timing-function: linear;
+    width: 50px;
+    height: 50px;
+    /* background-color: orange; */
+    background-image: url('../images/tx.png');
+    background-size: 50px;
+    position: relative;
+    animation-name: wallet1-tx-animation-4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    left: -50px;
+    animation-timing-function: linear;
 }
+
 @keyframes wallet1-tx-animation-4 {
-  0%   {left:-50px; top:0px;}
-  100%  {left:470px;}
+    0% {
+        left: -50px;
+        top: 0px;
+    }
+
+    100% {
+        left: 470px;
+    }
 }
 
 #nodes-and-miners-2-wallet2 {
@@ -749,6 +790,7 @@ a:focus {
     background-color: black;
     background-size: 75px;
 }
+
 #wallet4-dot {
     top: 140px;
     left: 714px;
@@ -763,6 +805,7 @@ a:focus {
     background-image: url('../images/pickaxe-icon.png');
     background-size: 75px;
 }
+
 #miner1-dot {
     top: 343px;
     left: 728px;
@@ -776,6 +819,7 @@ a:focus {
     background-image: url('../images/pickaxe-icon.png');
     background-size: 75px;
 }
+
 #miner2-dot {
     top: 498px;
     left: 189px;
@@ -789,6 +833,7 @@ a:focus {
     background-image: url('../images/pickaxe-icon.png');
     background-size: 75px;
 }
+
 #miner3-dot {
     top: 75px;
     left: 466px;
@@ -817,7 +862,8 @@ a:focus {
     border-radius: 50%;
 }
 
-#centralized-bitcoin .wallets, #centralized-bitcoin .miners {
+#centralized-bitcoin .wallets,
+#centralized-bitcoin .miners {
     position: absolute;
 }
 
@@ -830,114 +876,114 @@ a:focus {
 }
 
 #centralized-bitcoin #wallet1-to-big-bitcoin {
-	position: absolute;
-	top: 358px;
-	left: 142px;
-	width: 123px;
-	height: 3px;
-	rotate: 0deg;
-	color: #007bff;
-	border: 1px #007bff solid;
-	z-index: -1;
-	background-color: #007bff;
+    position: absolute;
+    top: 358px;
+    left: 142px;
+    width: 123px;
+    height: 3px;
+    rotate: 0deg;
+    color: #007bff;
+    border: 1px #007bff solid;
+    z-index: -1;
+    background-color: #007bff;
 }
 
 #centralized-bitcoin #wallet2-to-big-bitcoin {
-	position: absolute;
-	top: 164px;
-	left: 226px;
-	width: 105px;
-	height: 3px;
-	rotate: 45deg;
-	color: #007bff;
-	border: 1px #007bff solid;
-	z-index: -1;
-	background-color: #007bff;
+    position: absolute;
+    top: 164px;
+    left: 226px;
+    width: 105px;
+    height: 3px;
+    rotate: 45deg;
+    color: #007bff;
+    border: 1px #007bff solid;
+    z-index: -1;
+    background-color: #007bff;
 }
 
 #centralized-bitcoin #wallet3-to-big-bitcoin {
-	position: absolute;
-	top: 497px;
-	left: 555px;
-	width: 129px;
-	height: 3px;
-	rotate: -135deg;
-	color: #007bff;
-	border: 1px #007bff solid;
-	z-index: -1;
-	background-color: #007bff;
+    position: absolute;
+    top: 497px;
+    left: 555px;
+    width: 129px;
+    height: 3px;
+    rotate: -135deg;
+    color: #007bff;
+    border: 1px #007bff solid;
+    z-index: -1;
+    background-color: #007bff;
 }
 
 #centralized-bitcoin #wallet4-to-big-bitcoin {
-	position: absolute;
-	top: 202px;
-	left: 587px;
-	width: 178px;
-	height: 3px;
-	rotate: -230deg;
-	color: #007bff;
-	border: 1px #007bff solid;
-	z-index: -1;
-	background-color: #007bff;
+    position: absolute;
+    top: 202px;
+    left: 587px;
+    width: 178px;
+    height: 3px;
+    rotate: -230deg;
+    color: #007bff;
+    border: 1px #007bff solid;
+    z-index: -1;
+    background-color: #007bff;
 }
 
 #centralized-bitcoin #miner1-to-big-bitcoin {
-	position: absolute;
-	top: 350px;
-	left: 649px;
-	width: 100px;
-	height: 3px;
-	rotate: 0deg;
-	color: #007bff;
-	border: 1px #007bff solid;
-	z-index: -1;
-	background-color: #007bff;
+    position: absolute;
+    top: 350px;
+    left: 649px;
+    width: 100px;
+    height: 3px;
+    rotate: 0deg;
+    color: #007bff;
+    border: 1px #007bff solid;
+    z-index: -1;
+    background-color: #007bff;
 }
 
 #centralized-bitcoin #miner2-to-big-bitcoin {
-	position: absolute;
-	top: 477px;
-	left: 183px;
-	width: 136px;
-	height: 3px;
-	rotate: -34deg;
-	color: #007bff;
-	border: 1px #007bff solid;
-	z-index: -1;
-	background-color: #007bff;
+    position: absolute;
+    top: 477px;
+    left: 183px;
+    width: 136px;
+    height: 3px;
+    rotate: -34deg;
+    color: #007bff;
+    border: 1px #007bff solid;
+    z-index: -1;
+    background-color: #007bff;
 }
 
 #centralized-bitcoin #miner3-to-big-bitcoin {
-	position: absolute;
-	top: 113px;
-	left: 440px;
-	width: 76px;
-	height: 3px;
-	rotate: 90deg;
-	color: #007bff;
-	border: 1px #007bff solid;
-	z-index: -1;
-	background-color: #007bff;
+    position: absolute;
+    top: 113px;
+    left: 440px;
+    width: 76px;
+    height: 3px;
+    rotate: 90deg;
+    color: #007bff;
+    border: 1px #007bff solid;
+    z-index: -1;
+    background-color: #007bff;
 }
 
 #centralized-bitcoin #miner4-to-big-bitcoin {
-	position: absolute;
-	top: 522px;
-	left: 369px;
-	width: 56px;
-	height: 3px;
-	rotate: -85deg;
-	color: #007bff;
-	border: 1px #007bff solid;
-	z-index: -1;
-	background-color: #007bff;
+    position: absolute;
+    top: 522px;
+    left: 369px;
+    width: 56px;
+    height: 3px;
+    rotate: -85deg;
+    color: #007bff;
+    border: 1px #007bff solid;
+    z-index: -1;
+    background-color: #007bff;
 }
 
 #centralized-bitcoin #centralized-bitcoin-beholder img {
-	width: 444px;
-	top: 94px;
-	position: absolute;
-	left: 222px;
+    width: 444px;
+    top: 94px;
+    position: absolute;
+    left: 222px;
 }
 
 #decentralized-bitcoin .little-grumpy {
@@ -952,32 +998,39 @@ a:focus {
     top: 250px;
     left: 300px;
 }
+
 #decentralized-bitcoin .little-grumpy#little-grumpy2 {
     top: 305px;
     left: 395px;
 }
+
 #decentralized-bitcoin .little-grumpy#little-grumpy3 {
     top: 450px;
     left: 500px;
 }
+
 #decentralized-bitcoin .little-grumpy#little-grumpy4 {
     top: 300px;
     left: 585px;
 }
+
 #decentralized-bitcoin .little-grumpy#little-grumpy5 {
     top: 150px;
     left: 350px;
 }
+
 #decentralized-bitcoin .little-grumpy#little-grumpy6 {
     top: 380px;
     left: 300px;
 }
+
 #decentralized-bitcoin .little-grumpy#little-grumpy7 {
     top: 170px;
     left: 500px;
 }
 
-#decentralized-bitcoin .wallets, #decentralized-bitcoin .miners {
+#decentralized-bitcoin .wallets,
+#decentralized-bitcoin .miners {
     position: absolute;
 }
 
@@ -1065,10 +1118,12 @@ a:focus {
     border-radius: 50%;
     background-color: black;
 }
+
 #decentralized-bitcoin #nodes .node#node1 {
     top: 250px;
     left: 300px;
 }
+
 #decentralized-bitcoin #nodes .node#node2 {
     top: 305px;
     left: 395px;
@@ -1078,137 +1133,153 @@ a:focus {
     top: 450px;
     left: 500px;
 }
+
 #decentralized-bitcoin #nodes .node#node4 {
     top: 300px;
     left: 585px;
 }
+
 #decentralized-bitcoin #nodes .node#node5 {
     top: 150px;
     left: 350px;
 }
+
 #decentralized-bitcoin #nodes .node#node6 {
     top: 380px;
     left: 300px;
 }
+
 #decentralized-bitcoin #nodes .node#node7 {
     top: 170px;
     left: 500px;
 }
 
 #decentralized-bitcoin #wallet1-circle {
-	position: absolute;
-	top: 290px;
-	left: 51px;
+    position: absolute;
+    top: 290px;
+    left: 51px;
     color: white;
-	/* background-color: rgba(0, 0, 0, 0.5); */
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
+
 #decentralized-bitcoin #wallet4-circle {
-	position: absolute;
-	top: 50px;
-	left: 708px;
+    position: absolute;
+    top: 50px;
+    left: 708px;
     color: white;
-	/* background-color: rgba(0, 0, 0, 0.5); */
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 #decentralized-bitcoin #node-connections .connection {
     position: absolute;
     border: 5px solid #007bff;
-    border-top:0px solid red;
-    border-left:0px solid red;
-    border-right:0px solid red;
+    border-top: 0px solid red;
+    border-left: 0px solid red;
+    border-right: 0px solid red;
     height: 50px;
     overflow: hidden;
-}
-#decentralized-bitcoin #node-connections .outside-connection{
-    position: absolute;
-    border: 5px solid #00264e;
-    border-top:0px solid red;
-    border-left:0px solid red;
-    border-right:0px solid red;
-    height: 50px;
-    overflow: hidden;
-}
-#decentralized-bitcoin #node-connections #wallet1-to-node1 {
-	top: 266px;
-	left: 135px;
-	width: 159px;
-	transform: rotate(-19deg);
-	z-index: -999;
-}
-#decentralized-bitcoin #node-connections #miner1-to-node4 {
-	top: 340px;
-	left: 630px;
-	width: 118px;
-	transform: rotate(-172deg);
-	z-index: -999;
-}
-#decentralized-bitcoin #node-connections #miner2-to-node6 {
-	top: 422px;
-	left: 158px;
-	width: 163px;
-	transform: rotate(-40deg);
-	z-index: -999;
-}
-#decentralized-bitcoin #node-connections #miner4-to-node6 {
-	top: 471px;
-	left: 267px;
-	width: 145px;
-	transform: rotate(-114deg);
-	z-index: -999;
-}
-#decentralized-bitcoin #node-connections #miner3-to-node5 {
-	top: 81px;
-	left: 338px;
-	width: 114px;
-	transform: rotate(-59deg);
-	z-index: -999;
-}
-#decentralized-bitcoin #node-connections #wallet2-to-node5 {
-	top: 93px;
-	left: 229px;
-	width: 150px;
-	transform: rotate(21deg);
-	z-index: -999;
-}
-#decentralized-bitcoin #node-connections #wallet3-to-node3 {
-	top: 491px;
-	left: 539px;
-	width: 150px;
-	transform: rotate(38deg);
-	z-index: -999;
-}
-#decentralized-bitcoin #node-connections #wallet4-to-node7 {
-	top: 111px;
-	left: 548px;
-	width: 181px;
-	transform: rotate(-15deg);
-	z-index: -999;
 }
 
-#decentralized-bitcoin .wallets, #decentralized-bitcoin .miners {
+#decentralized-bitcoin #node-connections .outside-connection {
+    position: absolute;
+    border: 5px solid #00264e;
+    border-top: 0px solid red;
+    border-left: 0px solid red;
+    border-right: 0px solid red;
+    height: 50px;
+    overflow: hidden;
+}
+
+#decentralized-bitcoin #node-connections #wallet1-to-node1 {
+    top: 266px;
+    left: 135px;
+    width: 159px;
+    transform: rotate(-19deg);
+    z-index: -999;
+}
+
+#decentralized-bitcoin #node-connections #miner1-to-node4 {
+    top: 340px;
+    left: 630px;
+    width: 118px;
+    transform: rotate(-172deg);
+    z-index: -999;
+}
+
+#decentralized-bitcoin #node-connections #miner2-to-node6 {
+    top: 422px;
+    left: 158px;
+    width: 163px;
+    transform: rotate(-40deg);
+    z-index: -999;
+}
+
+#decentralized-bitcoin #node-connections #miner4-to-node6 {
+    top: 471px;
+    left: 267px;
+    width: 145px;
+    transform: rotate(-114deg);
+    z-index: -999;
+}
+
+#decentralized-bitcoin #node-connections #miner3-to-node5 {
+    top: 81px;
+    left: 338px;
+    width: 114px;
+    transform: rotate(-59deg);
+    z-index: -999;
+}
+
+#decentralized-bitcoin #node-connections #wallet2-to-node5 {
+    top: 93px;
+    left: 229px;
+    width: 150px;
+    transform: rotate(21deg);
+    z-index: -999;
+}
+
+#decentralized-bitcoin #node-connections #wallet3-to-node3 {
+    top: 491px;
+    left: 539px;
+    width: 150px;
+    transform: rotate(38deg);
+    z-index: -999;
+}
+
+#decentralized-bitcoin #node-connections #wallet4-to-node7 {
+    top: 111px;
+    left: 548px;
+    width: 181px;
+    transform: rotate(-15deg);
+    z-index: -999;
+}
+
+#decentralized-bitcoin .wallets,
+#decentralized-bitcoin .miners {
     position: absolute;
 }
+
 /* #decentralized-bitcoin {
     top: 250px;
     left: 300px;
 } */
 
 #decentralized-bitcoin .traveling-transaction-path {
-	z-index: -999;
+    z-index: -999;
     position: absolute;
     border: 0px solid red;
-    border-top:0px solid red;
-    border-left:0px solid red;
-    border-right:0px solid red;
+    border-top: 0px solid red;
+    border-left: 0px solid red;
+    border-right: 0px solid red;
     height: 50px;
     overflow: hidden;
 }
 
-#decentralized-bitcoin #transaction-origination{
-	top: 266px;
-	left: 135px;
-	width: 159px;
-	transform: rotate(-19deg);
+#decentralized-bitcoin #transaction-origination {
+    top: 266px;
+    left: 135px;
+    width: 159px;
+    transform: rotate(-19deg);
 }
 
 #decentralized-bitcoin #transaction-origination .traveling-transaction {
@@ -1223,17 +1294,26 @@ a:focus {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @keyframes wallet1-tx-animation-5 {
-  0%   {left:-50px; top:0px; opacity: 1}
-  100%  {left:150px; opacity: 0}
+    0% {
+        left: -50px;
+        top: 0px;
+        opacity: 1
+    }
+
+    100% {
+        left: 150px;
+        opacity: 0
+    }
 }
 
 #decentralized-bitcoin #miner3-gets-transaction {
-	top: 81px;
-	left: 338px;
-	width: 114px;
-	transform: rotate(-59deg);
-	z-index: -999;
+    top: 81px;
+    left: 338px;
+    width: 114px;
+    transform: rotate(-59deg);
+    z-index: -999;
 }
 
 #decentralized-bitcoin #miner3-traveling-transaction {
@@ -1248,19 +1328,29 @@ a:focus {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @keyframes wallet1-tx-animation-6 {
-  0%   {left:-50px; top:0px; opacity: 1}
-  100%  {left:100px; opacity: 0}
+    0% {
+        left: -50px;
+        top: 0px;
+        opacity: 1
+    }
+
+    100% {
+        left: 100px;
+        opacity: 0
+    }
 }
 
 
-#decentralized-bitcoin #miner2-gets-transaction{
-	top: 422px;
-	left: 158px;
-	width: 163px;
-	transform: rotate(-40deg);
-	z-index: -999;
+#decentralized-bitcoin #miner2-gets-transaction {
+    top: 422px;
+    left: 158px;
+    width: 163px;
+    transform: rotate(-40deg);
+    z-index: -999;
 }
+
 #decentralized-bitcoin #miner2-traveling-transaction {
     position: absolute;
     width: 50px;
@@ -1273,19 +1363,29 @@ a:focus {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @keyframes wallet1-tx-animation-7 {
-  0%   {left:100px; top:0px; opacity: 1}
-  100%  {left:-50px; opacity: 0}
+    0% {
+        left: 100px;
+        top: 0px;
+        opacity: 1
+    }
+
+    100% {
+        left: -50px;
+        opacity: 0
+    }
 }
 
 
 #decentralized-bitcoin #miner4-gets-transaction {
-	top: 457px;
-	left: 313px;
-	width: 145px;
-	transform: rotate(67deg);
-	z-index: -999;
+    top: 457px;
+    left: 313px;
+    width: 145px;
+    transform: rotate(67deg);
+    z-index: -999;
 }
+
 #decentralized-bitcoin #miner4-traveling-transaction {
     position: absolute;
     width: 50px;
@@ -1298,12 +1398,21 @@ a:focus {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @keyframes wallet1-tx-animation-8 {
-  0%   {left:-50px; top:0px; opacity: 1}
-  100%  {left:100px; opacity: 0}
+    0% {
+        left: -50px;
+        top: 0px;
+        opacity: 1
+    }
+
+    100% {
+        left: 100px;
+        opacity: 0
+    }
 }
 
-#decentralized-bitcoin .miner-mining{
+#decentralized-bitcoin .miner-mining {
     background-image: url('../images/tx.png');
     background-size: 25px;
     width: 25px;
@@ -1315,30 +1424,35 @@ a:focus {
     top: 587px;
     left: 190px;
 }
+
 #decentralized-bitcoin #miner3-mining-the-tx {
     top: 70px;
     left: 511px;
 }
+
 #decentralized-bitcoin #miner4-mining-the-tx {
     top: 625px;
     left: 431px;
 }
+
 #decentralized-bitcoin #wallet4-received-the-tx {
     top: 392px;
     left: 825px;
 }
+
 #decentralized-bitcoin #miner1-mining-the-tx {
     top: 145px;
     left: 796px;
 }
 
-#decentralized-bitcoin #wallet4-gets-transaction{
-	top: 111px;
-	left: 548px;
-	width: 181px;
-	transform: rotate(-15deg);
-	z-index: -999;
+#decentralized-bitcoin #wallet4-gets-transaction {
+    top: 111px;
+    left: 548px;
+    width: 181px;
+    transform: rotate(-15deg);
+    z-index: -999;
 }
+
 #decentralized-bitcoin #wallet4-traveling-transaction {
     position: absolute;
     width: 50px;
@@ -1351,17 +1465,28 @@ a:focus {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @keyframes wallet1-tx-animation-9 {
-  0%   {left:-50px; top:0px; opacity: 1}
-  100%  {left:175px; opacity: 0}
+    0% {
+        left: -50px;
+        top: 0px;
+        opacity: 1
+    }
+
+    100% {
+        left: 175px;
+        opacity: 0
+    }
 }
+
 #decentralized-bitcoin #miner1-gets-transaction {
-	top: 291px;
-	left: 637px;
-	width: 118px;
-	transform: rotate(8deg);
-	z-index: -999;
+    top: 291px;
+    left: 637px;
+    width: 118px;
+    transform: rotate(8deg);
+    z-index: -999;
 }
+
 #decentralized-bitcoin #miner1-traveling-transaction {
     position: absolute;
     width: 50px;
@@ -1374,9 +1499,18 @@ a:focus {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @keyframes wallet1-tx-animation-10 {
-  0%   {left:-50px; top:0px; opacity: 1}
-  100%  {left:100px; opacity: 0}
+    0% {
+        left: -50px;
+        top: 0px;
+        opacity: 1
+    }
+
+    100% {
+        left: 100px;
+        opacity: 0
+    }
 }
 
 
@@ -1394,26 +1528,32 @@ a:focus {
     top: 250px;
     left: 300px;
 }
+
 #decentralized-bitcoin #second-tx-propagation #node5-gets-tx {
     top: 150px;
     left: 350px;
 }
+
 #decentralized-bitcoin #second-tx-propagation #node6-gets-tx {
     top: 380px;
     left: 300px;
 }
+
 #decentralized-bitcoin #third-tx-propagation #node2-gets-tx {
     top: 305px;
     left: 395px;
 }
+
 #decentralized-bitcoin #third-tx-propagation #node3-gets-tx {
     top: 450px;
     left: 500px;
 }
+
 #decentralized-bitcoin #third-tx-propagation #node4-gets-tx {
     top: 300px;
     left: 585px;
 }
+
 #decentralized-bitcoin #third-tx-propagation #node7-gets-tx {
     top: 170px;
     left: 500px;
@@ -1422,24 +1562,38 @@ a:focus {
 .impress-on-node-properties #node-properties {
     opacity: 1;
 }
+
 .impress-on-node-properties #decentralized-bitcoin {
     opacity: 1.0;
     z-index: 99999;
 }
 
-#node-properties ul{
+.impress-on-node-properties #decentralized-bitcoin .traveling-transaction {
+    display: block !important;
+}
+.impress-on-node-properties #decentralized-bitcoin #transaction-propagates-to-miners-2-3-4 {
+    display: block !important;
+}
+.impress-on-node-properties #decentralized-bitcoin #transaction-propagates-to-miner1-and-wallet4 {
+    display: block !important;
+}
+
+#node-properties ul {
     list-style: inherit;
     margin-top: 50px;
 }
-#node-properties li  {
+
+#node-properties li {
     font-size: 48px;
     margin-left: 50px;
     margin-top: 30px;
 }
-#node-properties li::marker  {
+
+#node-properties li::marker {
     color: #007bff;
     font-size: 48px;
 }
+
 #node-properties li.narrow-list-item {
     width: 400px;
     line-height: 64px;
@@ -1454,21 +1608,24 @@ a:focus {
 .impress-on-what-does-a-node-look-like #decentralized-bitcoin {
     opacity: 0.3;
 }
+
 .impress-on-what-does-a-node-look-like #zoomed-in-node {
     opacity: 1.0 !important;
 }
 
+
 #what-does-a-node-look-like #zoomed-in-node {
-	position: absolute;
-	top: -186px;
-	left: 173px;
-	width: 231px;
-	height: 231px;
-	border: 23px solid #007bff;
-	border-radius: 50%;
-	z-index: 9999999;
-	background-color: yellow;
+    position: absolute;
+    top: -186px;
+    left: 173px;
+    width: 231px;
+    height: 231px;
+    border: 23px solid #007bff;
+    border-radius: 50%;
+    z-index: 9999999;
+    background-color: yellow;
 }
+
 #title {
     padding: 0;
 }
