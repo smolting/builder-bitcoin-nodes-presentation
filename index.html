@@ -189,6 +189,27 @@
     -->
 
         <div id="nodes-and-miners" class="step slide" data-x="0" data-y="0">
+            <div class="notes">
+                <div id="wallets-notes">
+                    <p>K so let's talk about wallets and miners</p>
+                    <p>Who here has bitcoin wallet software on their phone or desktop?</p>
+                    <p>Okay wallets for the purposes of this talk do a couple things:</p>
+                    <ul>
+                        <li>
+                            They produce transactions
+                        </li>
+                        <li>
+                            They monitor receive transactions
+                        </li>
+                        <li>
+                            <p>They track the status of those transactions (confirmations)</p>
+                            <p>And in doing so, they display things like, this tx is pending, this tx is confirmed,
+                                here's your balance, etc...</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
 
             <div id="wallet1" class="substep wallets">
                 <!-- <img src="images/wallet-sparrow.png" alt="Wallet 1" /> -->
@@ -343,28 +364,51 @@
 
         </div>
 
-        <div id="why-centralized-bitcoin-sucks" class="step slide" data-x="4096" data-y="0">
-            <div id="why-centralized-bitcoin-sucks-title" class="substep">
-                <h1 class="substep">
-                    Why a centralized bitcoin sucks: <span class="substep">It's not trustless</span>
-                </h1>
+        <div id="why-centralized-bitcoin-sucks" class="step slide" data-x="1300" data-y="-600" data-scale="3"
+            style="opacity: 0">
+            <div class="notes">
+                <ul>
+                    <li>
+                        Expensive: Even if the software controlling the network was open source,
+                        the resources necessary to control the world's supply of digital money would
+                        require massive capital, meaning that some company or consortium of companies And
+                        their investors are in control of this network. They decide who gets to use it, 
+                        what the supply is, what the rules are.
+                    </li>
+                    <li>
+                        Trustful: You have no option but to trust that the money is being managed correctly.
+                        Exactly like with a bank or a government.
+                    </li>
+                    <li>
+                        Corruptible: Whoever is control of this central authority can change the rules or even the
+                        supply.
+                    </li>
+                    <li>
+                        Stoppable: If the central authority is ever compromised, either by incompetence
+                        (like the digital currency company going bankrupt), corruption,
+                        or by force (government doesn't like competition), then the whole network stops.
+                    </li>
+                </ul>
             </div>
+            <h1>
+                Why a centralized bitcoin sucks:
+            </h1>
 
-            <p class="substep">
-                It's entirely corruptible. (censorship, deplatforming, spying, supply manipulation, etc...)
-            </p>
-            <p class="substep">
-                It's not secure.
-            </p>
-            <p class="substep">
-                There's no chance of being private.
-            </p>
-            <p>
-                And the amount of resources necessary to run this central entity
-                ensures that you can't feasibly run it on your own. YOu'll a
-                lot of money and infrastructure, meaning you'll need to form a company,
-                drum up investors, etc...basically it's a shitcoin.
-            </p>
+            <ul>
+                <li class="substep">
+                    Expensive. 
+                </li>
+                <li class="substep">
+                    Trustful.
+                </li>
+                <li class="substep">
+                    Corruptible
+                </li>
+                <li class="substep">
+                    Stoppable
+                </li>
+            </ul>
+
         </div>
 
         <div id="decentralized-bitcoin" class="step slide" data-x="6144" data-y="0">
@@ -514,15 +558,22 @@
         <div id="what-does-a-node-look-like" class="step" data-x="6144" data-y="0" data-scale="0.2">
             <div id="zoomed-in-node" style="opacity: 0"></div>
         </div>
-        <div id="why-should-you-run-a-node" class="slide step"data-x="7168" data-y="0">
+        <div id="why-should-you-run-a-node" class="slide step" data-x="7168" data-y="0">
+            <h1>Big Brain Reasons to Run a Node</h1>
             <ul>
-                <li class="substep">You can be sure that your wallet is getting accurate information</li>
-                <li class="substep">You can be sure that your transactions are being relayed to the network</li>
-                <li class="substep">You can be sure that your transactions are being included in blocks</li>
-                <li class="substep">You can be sure that your transactions are being verified by the network</li>
-                <li class="substep">You can be sure that you are not relying on a third party to do any of this for you</li>
+                <li class="substep">Decentralize bitcoin</li>
+                <li class="substep narrow-list-item">To enforce the rules you support (aka consensus)</li>
+                <li class="substep narrow-list-item">To verify all the information about bitcoin relevant to you</li>
             </ul>
-            </div>
+        </div>
+        <div id="why-should-you-run-a-node-2" class="slide step" data-x="8192" data-y="0">
+            <h1>Grug Brain Reasons to Run a Node</h1>
+            <ul>
+                <li class="substep narrow-list-item">Increase your privacy significantly</li>
+                <li class="substep">To become more censorship resistant</li>
+                <li class="substep narrow-list-item">To learn and grow</li>
+            </ul>
+        </div>
     </div>
 
 

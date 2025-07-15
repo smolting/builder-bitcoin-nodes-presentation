@@ -986,6 +986,45 @@ a:focus {
     left: 222px;
 }
 
+.impress-on-why-centralized-bitcoin-sucks #why-centralized-bitcoin-sucks {
+    opacity: 1;
+}
+
+.impress-on-why-centralized-bitcoin-sucks #centralized-bitcoin {
+    opacity: 1.0;
+    z-index: 99999;
+}
+
+
+#why-centralized-bitcoin-sucks ul {
+    list-style: inherit;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#why-centralized-bitcoin-sucks li {
+    font-size: 48px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#why-centralized-bitcoin-sucks li::marker {
+    color: #007bff;
+    font-size: 48px;
+}
+
+#why-centralized-bitcoin-sucks li.narrow-list-item {
+    width: 400px;
+    line-height: 64px;
+}
+
+#why-centralized-bitcoin-sucks h1 {
+    font-size: 48px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
 #decentralized-bitcoin .little-grumpy {
     position: absolute;
     width: 50px;
@@ -1633,6 +1672,72 @@ a:focus {
     background-repeat: no-repeat;
     background-size: 35%;
 }
+
+#why-should-you-run-a-node h1 {
+    font-size: 64px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 64px;
+}
+#why-should-you-run-a-node ul {
+    list-style: inherit;
+    margin-top: 50px;
+}
+
+#why-should-you-run-a-node li {
+    font-size: 48px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#why-should-you-run-a-node li::marker {
+    color: #007bff;
+    font-size: 48px;
+}
+
+#why-should-you-run-a-node li.narrow-list-item {
+    width: 450px;
+    line-height: 48px;
+}
+
+#why-should-you-run-a-node-2 {
+    background-image: url('../images/grug.png');
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 35%;
+}
+
+#why-should-you-run-a-node-2 h1 {
+    font-size: 64px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 64px;
+}
+#why-should-you-run-a-node-2 ul {
+    list-style: inherit;
+    margin-top: 50px;
+}
+
+#why-should-you-run-a-node-2 li {
+    font-size: 48px;
+    margin-left: 50px;
+    line-height: 48px;
+    margin-top: 30px;
+}
+
+#why-should-you-run-a-node-2 li::marker {
+    color: #007bff;
+    font-size: 48px;
+}
+
+#why-should-you-run-a-node-2 li.narrow-list-item {
+    width: 450px;
+    line-height: 48px;
+}
+
+
+
 #title {
     padding: 0;
 }
