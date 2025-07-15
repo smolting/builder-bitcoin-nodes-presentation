@@ -1626,6 +1626,13 @@ a:focus {
     background-color: yellow;
 }
 
+#why-should-you-run-a-node {
+    background-image: url('../images/braincube.png');
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 35%;
+}
 #title {
     padding: 0;
 }
