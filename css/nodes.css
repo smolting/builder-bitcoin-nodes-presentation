@@ -337,6 +337,35 @@ a:focus {
     opacity: 0.2;
 }
 
+.slide ul {
+    list-style: inherit;
+    margin-top: 50px;
+}
+
+.slide li {
+    font-size: 48px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.slide li::marker {
+    color: #007bff;
+    font-size: 48px;
+}
+
+.slide li.narrow-list-item {
+    width: 400px;
+    line-height: 48px;
+}
+
+.slide h1 {
+    font-size: 48px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 48px;
+}
+
+
 .slide.active {
     opacity: 0.90 !important;
 }
@@ -1644,6 +1673,7 @@ a:focus {
     text-align: center;
 }
 
+
 .impress-on-what-does-a-node-look-like #decentralized-bitcoin {
     opacity: 0.3;
 }
@@ -1736,7 +1766,55 @@ a:focus {
     line-height: 48px;
 }
 
+#why-my-macbook-sucks {
+    background-image: url('../images/sad-mac.png');
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 35%;
+}
 
+#buy-a-personal-server table{
+    margin-top: 75px;
+    margin-left: -40px;
+    border: 0px solid white;
+}
+#buy-a-personal-server th, td{
+    padding: 25px;
+    text-align: center;
+    
+}
+
+#buy-a-personal-server #umbrel_screenshot1 {
+	position: absolute;
+	top: 46px;
+	/* left: 0px; */
+	width: 1024px;
+	height: 768px;
+	background-image: url('../images/umbrel_screenshot1.png');
+	background-size: 800px 600px;
+	background-repeat: no-repeat;
+}
+#buy-a-personal-server #umbrel_screenshot2 {
+	position: absolute;
+	top: 46px;
+	/* left: 0px; */
+	width: 1024px;
+	height: 768px;
+	background-image: url('../images/umbrel_screenshot2.png');
+	background-size: 800px 600px;
+	background-repeat: no-repeat;
+}
+#buy-a-personal-server #umbrel_screenshot3 {
+	position: absolute;
+	top: 46px;
+	/* left: 0px; */
+	width: 1024px;
+	height: 768px;
+	background-image: url('../images/umbrel_screenshot3.png');
+	background-size: 800px 600px;
+	background-repeat: no-repeat;
+}
 
 #title {
     padding: 0;
